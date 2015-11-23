@@ -11,9 +11,9 @@
   <wsdl:types>
     <xsd:schema>
       <xsd:import namespace="http://www.phkairways.com/xsd/services/Failure/1.0"
-        schemaLocation="/tmp/samplews/01-wsdl2java/xsd/failure.xsd"/>
+        schemaLocation="../xsd/failure.xsd"/>
       <xsd:import namespace="http://www.phkairways.com/xsd/services/Airlines/2.2"
-        schemaLocation="/tmp/samplews/01-wsdl2java/xsd/flight.xsd"/>
+        schemaLocation="../xsd/flight.xsd"/>
     </xsd:schema>
   </wsdl:types>
 
