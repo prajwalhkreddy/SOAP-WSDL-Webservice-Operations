@@ -13,22 +13,36 @@
       <xsd:import namespace="http://www.phkairways.com/xsd/services/Failure/1.0"
         schemaLocation="/tmp/samplews/01-wsdl2java/xsd/failure.xsd"/>
       <xsd:import namespace="http://www.phkairways.com/xsd/services/Airlines/2.2"
-        schemaLocation="/tmp/samplews/01-wsdl2java/xsd/billpayment.xsd"/>
+        schemaLocation="/tmp/samplews/01-wsdl2java/xsd/flight.xsd"/>
     </xsd:schema>
   </wsdl:types>
 
-  <wsdl:message name="BillPaymentRequestMessage">
+  <wsdl:message name="FlightSearchRequestMessage">
     <wsdl:documentation>
-      BillPaymentRequestMessage is the request to perform bill payment and contains........
+      FlightSearchRequestMessage is the request to search for a specific flight and takes the input flight date, source airport and destination airport
     </wsdl:documentation>
-    <wsdl:part name="request" element="bp:BillPaymentRequest"/>
+    <wsdl:part name="request" element="bp:FlightSearchRequest"/>
   </wsdl:message>
   
-  <wsdl:message name="BillPaymentResponseMessage">
+  <wsdl:message name="FlightSearchResponseMessage">
     <wsdl:documentation>
-      BillPaymentResponseMessage is the response to a bill payment request
+      FlightSearchResponseMessage is the response to the flight search request. It returns flight number, flight date, flight time and price
     </wsdl:documentation>
-    <wsdl:part name="response" element="bp:BillPaymentResponse"/>
+    <wsdl:part name="response" element="bp:FlightSearchResponse"/>
+  </wsdl:message>
+
+  <wsdl:message name="FlightBookRequestMessage">
+    <wsdl:documentation>
+      FlightBookRequestMessage is the request to book a specific flight and takes the input flight number, flight date, flight time,source airport and destination airport
+    </wsdl:documentation>
+    <wsdl:part name="request" element="bp:FlightBookRequest"/>
+  </wsdl:message>
+  
+  <wsdl:message name="FlightBookResponseMessage">
+    <wsdl:documentation>
+      FlightBookResponseMessage is the response to book a specific flight. It returns flight status and booking confirmation number.
+    </wsdl:documentation>
+    <wsdl:part name="response" element="bp:FlightBookResponse"/>
   </wsdl:message>
   
   <wsdl:message name="FailureMessage">
