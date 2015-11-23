@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.xyz.com/xsd/services/Failure/1.0"
-           xmlns="http://www.xyz.com/xsd/services/Failure/1.0"
+           targetNamespace="http://www.phkairways.com/xsd/services/Failure/1.0"
+           xmlns="http://www.phkairways.com/xsd/services/Failure/1.0"
 	   elementFormDefault="qualified">
 
   <xs:element name="Failure">
